@@ -1,0 +1,67 @@
+section#trailer.is_overlay
+    video#video(width='100%', height='auto', autoplay='autoplay', loop='loop', preload='auto')
+        source(src='video/test-back.mp4')
+    .overlay
+    nav.navbar.navbar-default
+        .container
+            .row
+                // Brand and toggle get grouped for better mobile display
+                .col-xs-5
+                .col-xs-4
+                    .navbar-header
+                        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                // -- col-xs-4 --
+                .col-xs-3
+            // - row -
+            // Collect the nav links, forms, and other content for toggling
+            #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right.topHiddenMenu
+                    li
+                        a(href='#') Об организации
+                    li
+                        a(href='#') Наша деятельность
+                    li
+                        a(href='#') Подразделения
+                    li
+                        a(href='#') Наши проекты
+                    li
+                        a(href='#') Отряды
+            // /.navbar-collapse
+        // /.container-fluid
+
+section.container.main-page
+    .row.top-menu.hidden-xs
+        .col-lg-4.col-md-4.top-menu__logo.col-sm-0.hidden-sm.hidden-xs  МИРЭА
+        .col-lg-8.col-md-8.col-sm-12.top-menu__menu
+            ul.top-menu__nav
+                li
+                    a Отряды
+                li
+                    a Наша деятельность
+                li
+                    a Подразделения
+                li
+                    a Наши проекты
+                li
+                    a Об организации
+    br
+    br
+    br
+    .row.button
+        .col-lg-5.col-md-5.col-sm-4.col-xs-4   
+        .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-see Смотреть
+        .col-lg-5.col-md-5.col-sm-4.col-xs-4
+    .row.switch
+        .col-lg-4
+        .col-lg-4.switch-type
+            i.switchX.switch-first
+            i.switchX.switch-two
+            i.switchX.switch-three
+            i.switchX.switch-four
+            i.switchX.switch-five
+            i.switchX.switch-last
+        .col-lg-4
