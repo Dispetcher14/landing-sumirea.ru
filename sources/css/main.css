@@ -1,0 +1,172 @@
+body{
+margin: 0;
+padding: 0;
+}
+@font-face {
+    font-family: LR; /* Гарнитура шрифта */
+    src: url(fonts/LR.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: LL; /* Гарнитура шрифта */
+    src: url(fonts/LL.ttf); /* Путь к файлу со шрифтом */
+   }
+/* Первый слайд */
+
+.topHiddenMenu {
+    margin-top: 40px;
+}
+.topHiddenMenu li a{
+    text-align: center;
+    color: white;
+    font-family: LL;
+}
+
+
+
+.main-page .top-menu .top-menu__logo {
+    font-family: LR;
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+}
+
+.main-page .top-menu .top-menu__menu .top-menu__nav {
+    list-style: none;  
+    margin: 0; 
+    padding-left: 0;
+    margin-top: 12px;
+}
+
+.main-page .top-menu .top-menu__menu .top-menu__nav li {
+    display: inline;
+    font-size: 15px;
+    float: right;
+}
+
+.main-page .top-menu .top-menu__menu .top-menu__nav li a {
+    color: white;;
+    font-family: LR;
+    padding-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-page .button .button-see {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: 20%;
+    margin-left: 0 auto;
+    font-family: LR;
+    padding: 6 10 6 10;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-page .switch{
+
+    margin-top: 70%;
+}
+
+.main-page .switch .switch-type {
+    text-align: center;
+}
+
+.main-page .switch .switch-type .switch-first , .switch-two, .switch-three, .switch-four, .switch-five, .switch-last {
+    height: 10px;
+    width: 10px;
+    padding-right: 15px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 150px;
+}
+
+.main-page .switch .switch-type .switch-first {
+    background: white;
+}
+
+.main-page .switch .switch-type .switch-last {
+    margin-right: 0;
+}
+
+/* Об организации */
+
+.about-org {
+    margin-top: 10px;
+}
+
+.about-org__text {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    font-family: LR;
+}
+
+.about-org__logo {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.about-org__logo img {
+    width: 350px;
+}
+
+.about-org__whatis {
+    text-align: center;
+    font-size: 20px;
+    font-family: LR;
+    margin-top: 30px;
+    color: black;
+}
+
+.about-org__panels {
+    margin-top: 50px;
+}
+
+.about-org__info{
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: LL;
+    
+}
+
+.button .button-join {
+     text-align: center;
+    color: black;
+    font-size: 16px;
+    margin-top: 5%;
+    margin-left: 0 auto;
+    font-family: LR;
+    padding: 6 10 6 10;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about-org .switch{
+
+   margin-top: 10%;
+}
+
+.about-org .switch .switch-type {
+    text-align: center;
+}
+
+.about-org .switch .switch-type .switch-first , .switch-two, .switch-three, .switch-four, .switch-five, .switch-last {
+    height: 10px;
+    width: 10px;
+    padding-right: 15px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 150px;
+}
+
+.about-org .switch .switch-type .switch-two {
+    background: black;
+}
+
+.about-org .switch .switch-type .switch-last {
+    margin-right: 0;
+}
