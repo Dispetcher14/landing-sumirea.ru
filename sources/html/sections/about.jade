@@ -1,48 +1,26 @@
-section.about-org.container
-    .about-org__text  Об организации [eeq
-    .about-org__logo
+include ../elements/panel
+
+section.about.row.flex-center__x
+    .about-header.col-xs-12.text-center Об организации
+    .about-logo.col-xs-12.text-center
         img(src='img/logo.png', alt='')
-    .about-org__whatis  ММОО Студенческий союз МИРЭА занимается тем-то, тем-то и тем-то
-    .row.about-org__panels
-        .col-lg-3
-            .panel.panel-success
-                .panel-heading
-                    h3.panel-title.text-center Нам #23 года
-                .panel-body.text-center
-                    | 07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ
-        .col-lg-3
-            .panel.panel-primary
-                .panel-heading
-                    h3.panel-title.text-center Нам #23 года
-                .panel-body.text-center
-                    | 07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ
-        .col-lg-3
-            .panel.panel-danger
-                .panel-heading
-                    h3.panel-title.text-center Нам #23 года
-                .panel-body.text-center
-                    | 07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ
-        .col-lg-3
-            .panel.panel-warning
-                .panel-heading
-                    h3.panel-title.text-center Нам #23 года
-                .panel-body.text-center
-                    | 07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ
-    .row
-        .about-org__info.col-lg-12
+    .about-description.col-xs-12.text-center
+        span.about-description__bold ММОО Студенческий союз МИРЭА
+        | &nbsp; занимается тем-то, тем-то и тем-то
+
+    .about-panels.col-xs-12.row
+        +panel("Нам #23 года", "07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ")(class="color-green")
+        +panel("Нам #23 года", "07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ")(class="color-blue")
+        +panel("Нам #23 года", "07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ")(class="color-pink")
+        +panel("Нам #23 года", "07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ")(class="color-blue__dark")
+
+    .about-info.col-xs-12.row
+        .col-lg-12
             | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-    .row.button
+
+    .about-action.col-xs-12.row
         .col-lg-5.col-md-5.col-sm-4.col-xs-4   
-        .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-join  Вступить
+        .about-action__btn.col-lg-2.col-md-2.col-sm-4.col-xs-4  Вступить
         .col-lg-5.col-md-5.col-sm-4.col-xs-4   
-    .s   
-    .row.switch
-        .col-lg-4
-        .col-lg-4.switch-type
-            i.switchX.switch-first
-            i.switchX.switch-two
-            i.switchX.switch-three
-            i.switchX.switch-four
-            i.switchX.switch-five
-            i.switchX.switch-last
-        .col-lg-4
+
+    //--slider switches here if needed?
