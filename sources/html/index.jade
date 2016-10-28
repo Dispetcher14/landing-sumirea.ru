@@ -10,42 +10,42 @@ html
             link(href='css/flexboxgrid-helpers.min.css', rel='stylesheet')
             link(href='css/css.min.css', rel='stylesheet')
         body
-            #trailer.is_overlay
+            section#trailer.is_overlay
                 video#video(width='100%', height='auto', autoplay='autoplay', loop='loop', preload='auto')
                     source(src='video/test-back.mp4')
                 .overlay
-            nav.navbar.navbar-default.visible-xs
-                .container
-                    .rows
-                        // Brand and toggle get grouped for better mobile display
-                        .col-xs-5
-                        .col-xs-4
-                            .navbar-header
-                                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-                                    span.sr-only Toggle navigation
-                                    span.icon-bar
-                                    span.icon-bar
-                                    span.icon-bar
-                        // -- col-xs-4 --
-                        .col-xs-3
-                    // - rows -
-                    // Collect the nav links, forms, and other content for toggling
-                    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                        ul.nav.navbar-nav.navbar-right.topHiddenMenu
-                            li
-                                a(href='#') Об организации
-                            li
-                                a(href='#') Наша деятельность
-                            li
-                                a(href='#') Подразделения
-                            li
-                                a(href='#') Наши проекты
-                            li
-                                a(href='#') Отряды
-                    // /.navbar-collapse
-                // /.container-fluid
-            .container.main-page
-                .rows.top-menu.hidden-xs
+                nav.navbar.navbar-default.visible-xs
+                    .container
+                        .row
+                            // Brand and toggle get grouped for better mobile display
+                            .col-xs-5
+                            .col-xs-4
+                                .navbar-header
+                                    button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                                        span.sr-only Toggle navigation
+                                        span.icon-bar
+                                        span.icon-bar
+                                        span.icon-bar
+                            // -- col-xs-4 --
+                            .col-xs-3
+                        // - row -
+                        // Collect the nav links, forms, and other content for toggling
+                        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                            ul.nav.navbar-nav.navbar-right.topHiddenMenu
+                                li
+                                    a(href='#') Об организации
+                                li
+                                    a(href='#') Наша деятельность
+                                li
+                                    a(href='#') Подразделения
+                                li
+                                    a(href='#') Наши проекты
+                                li
+                                    a(href='#') Отряды
+                        // /.navbar-collapse
+                    // /.container-fluid
+            section.container.main-page
+                .row.top-menu.hidden-xs
                     .col-lg-4.col-md-4.top-menu__logo.col-sm-0.hidden-sm.hidden-xs  МИРЭА
                     .col-lg-8.col-md-8.col-sm-12.top-menu__menu
                         ul.top-menu__nav
@@ -62,11 +62,11 @@ html
                 br
                 br
                 br
-                .rows.button
+                .row.button
                     .col-lg-5.col-md-5.col-sm-4.col-xs-4   
-                    .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-see  Смотреть
+                    .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-see Смотреть
                     .col-lg-5.col-md-5.col-sm-4.col-xs-4
-                .rows.switch
+                .row.switch
                     .col-lg-4
                     .col-lg-4.switch-type
                         i.switchX.switch-first
@@ -76,12 +76,13 @@ html
                         i.switchX.switch-five
                         i.switchX.switch-last
                     .col-lg-4
-            .about-org.container
+
+            section.about-org.container
                 .about-org__text  Об организации
                 .about-org__logo
                     img(src='img/logo.png', alt='')
                 .about-org__whatis  ММОО Студенческий союз МИРЭА занимается тем-то, тем-то и тем-то
-                .rows.about-org__panels
+                .row.about-org__panels
                     .col-lg-3
                         .panel.panel-success
                             .panel-heading
@@ -106,15 +107,15 @@ html
                                 h3.panel-title.text-center Нам #23 года
                             .panel-body.text-center
                                 | 07.05.1992 - дата создания нашего Студенческого союза. Мы объединяем в себе МИРЭА/МГУПИ/МИТХТ/КПИИТ
-                .rows
+                .row
                     .about-org__info.col-lg-12
                         | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text
-                .rows.button
+                .row.button
                     .col-lg-5.col-md-5.col-sm-4.col-xs-4   
                     .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-join  Вступить
                     .col-lg-5.col-md-5.col-sm-4.col-xs-4   
                 .s   
-                .rows.switch
+                .row.switch
                     .col-lg-4
                     .col-lg-4.switch-type
                         i.switchX.switch-first
@@ -124,6 +125,8 @@ html
                         i.switchX.switch-five
                         i.switchX.switch-last
                     .col-lg-4
+
+            //---Scripts
             script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
             script(src='js/jquery.min.js')
             script(src='js/js.min.js')
