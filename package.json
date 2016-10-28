@@ -28,5 +28,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-stylus": "^2.5.0",
     "imagemin-pngquant": "^5.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }
