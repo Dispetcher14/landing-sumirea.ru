@@ -10,9 +10,9 @@ Install this software:
 
 ### Steps to contribute 
 
-* git clone
-* npm install
-* gulp
+* git clone this repo
+* run `npm install`
+* run `gulp`
 * write code
 * commit
 * push
