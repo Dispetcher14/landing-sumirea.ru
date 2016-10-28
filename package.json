@@ -30,6 +30,9 @@
     "imagemin-pngquant": "^5.0.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1"
+    "flexboxgrid": "^6.3.1",
+    "flexboxgrid-helpers": "^1.1.1",
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0"
   }
 }
