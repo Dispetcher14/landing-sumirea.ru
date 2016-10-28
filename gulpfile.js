@@ -138,7 +138,7 @@ gulp.task('build', [
     'buildCss',
     'buildStylus',
     'buildJade',
-    'buildFonts',
+    //'buildFonts',
     'buildImg',
     'buildFavicon',
     'buildDeps'
@@ -159,14 +159,14 @@ gulp.task('watch', function () {
     gulp.watch(src_css, ['reloadCss']);
     gulp.watch(src_stylus, ['reloadStylus']);
     gulp.watch(src_img, ['reloadImg']);
-    gulp.watch(src_fonts, ['reloadFonts']);
+    //gulp.watch(src_fonts, ['reloadFonts']);
 
     //Reload builded
     gulp.watch(dest_html + '*.html').on('change', browserSync.reload);
     gulp.watch(DEST + '/js/*').on('change', browserSync.reload);
     gulp.watch(DEST + '/css/*').on('change', browserSync.reload);
     gulp.watch(DEST + '/img/*').on('change', browserSync.reload);
-    gulp.watch(DEST + '/fonts/*').on('change', browserSync.reload);
+    //gulp.watch(DEST + '/fonts/*').on('change', browserSync.reload);
 });
 
 /* -------------------- Dependencies */
