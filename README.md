@@ -12,6 +12,7 @@ Install this software:
 
 * git clone this repo
 * run `npm install`
+* run `npm i -g gulp`
 * run `gulp`
 * write code
 * commit
