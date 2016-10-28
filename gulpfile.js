@@ -22,6 +22,7 @@ var src_js = src_path + 'js/**/*.js',
     src_css = src_path + 'css/**/*.css',
     src_stylus = src_path + 'css/**/*.styl',
     src_img = src_path + 'img/**/*',
+    src_video = 'sources/video/**/*',
     src_ico = src_path + 'img/favicon/*.ico',
     src_jade = src_path + 'html/**/*.jade',
     src_fonts = src_path + 'fonts/**/*';
@@ -141,7 +142,8 @@ gulp.task('build', [
     //'buildFonts',
     'buildImg',
     'buildFavicon',
-    'buildDeps'
+    'buildDeps',
+    'reloadVideo'
 ]);
 
 
@@ -159,6 +161,7 @@ gulp.task('watch', function () {
     gulp.watch(src_css, ['reloadCss']);
     gulp.watch(src_stylus, ['reloadStylus']);
     gulp.watch(src_img, ['reloadImg']);
+    gulp.watch(src_video, ['reloadVideo']);
     //gulp.watch(src_fonts, ['reloadFonts']);
 
     //Reload builded
@@ -306,3 +309,11 @@ gulp.task('buildFavicon', function () {
     gulp.src(src_ico)
         .pipe(gulp.dest(dest_html))
 });
+
+/* -------------------- Video */
+//Reload
+gulp.task('reloadVideo', function () {
+    gulp.src(src_video)
+        .pipe(gulp.dest(DEST + 'video'))
+});
+
