@@ -1,2 +1,21 @@
+include ../elements/projects-list__item
+
 section#projects.projects.row.flex-center__x.text-color__white
-    .section-header.col-xs-12 Наши проекты
+    .col-xs-12.section-header Наши проекты
+
+    .col-xs-12.projects-list
+        //4 sizes
+        +projects-list__item('ВРИ "Лес"')(size="2", icon="tree", bg="")
+        +projects-list__item("Мы - команда", true)(size="1", icon="", bg="")
+        +projects-list__item("Медиашкола")(size="2", icon="camera", bg="")
+
+        +projects-list__item("Черлидинг")(size="4", icon="thumbs-up", bg="")
+        +projects-list__item("Отряд Априори")(size="3", icon="users", bg="")
+        +projects-list__item("Киберспорт")(size="2", icon="gamepad", bg="")
+        +projects-list__item("Школа кураторов")(size="2", icon="graduation-cap", bg="")
+        +projects-list__item("Отряд Атмосфера")(size="3", icon="bug", bg="")
+        +projects-list__item("Звук/Свет")(size="4", icon="sun", bg="")
+
+    .projects-text.col-xs-8
+        | Не хватает чего-то? &nbsp;
+        span.projects-text__bold Придумай свой проект
