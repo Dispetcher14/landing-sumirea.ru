@@ -3,18 +3,18 @@ include ../elements/projects-list__item
 section#projects.projects.row.flex-center__x.text-color__white
     .col-xs-12.section-header Наши проекты
 
-    .col-xs-12.row.projects-list.flex-center
+    .col-xs-12.row.projects-list.flex-center__x.around-xs
         //4 sizes
-        +projects-list__item('ВРИ "Лес"')(size="2", icon="tree", bg="", flexAlign="col-md-4 flex-end")
-        +projects-list__item("Мы - команда", true)(size="1", icon="", bg="", flexAlign="col-md-3 flex-center")
-        +projects-list__item("Медиашкола")(size="2", icon="camera", bg="", flexAlign="col-md-4 flex-start")
+        +projects-list__item('ВРИ "Лес"')(size="2", icon="tree", bg="", flexClass="col-md-4 flex-x__end")
+        +projects-list__item("Мы - команда", true)(size="1", icon="", bg="", flexClass="col-md-3 flex-center")
+        +projects-list__item("Медиашкола")(size="2", icon="camera", bg="", flexClass="col-md-4 flex-x__start")
 
-        +projects-list__item("Черлидинг")(size="4", icon="thumbs-up", bg="")
-        +projects-list__item("Отряд Априори")(size="3", icon="users", bg="")
-        +projects-list__item("Киберспорт")(size="2", icon="gamepad", bg="")
-        +projects-list__item("Школа кураторов")(size="2", icon="graduation-cap", bg="")
-        +projects-list__item("Отряд Атмосфера")(size="3", icon="bug", bg="")
-        +projects-list__item("Звук/Свет")(size="4", icon="sun", bg="")
+        +projects-list__item("Черлидинг")(size="4", icon="thumbs-up", bg="", flexAlign="end")
+        +projects-list__item("Отряд Априори")(size="3", icon="users", bg="", flexAlign="end")
+        +projects-list__item("Киберспорт")(size="2", icon="gamepad", bg="", flexAlign="end")
+        +projects-list__item("Школа кураторов")(size="2", icon="graduation-cap", bg="", flexAlign="start")
+        +projects-list__item("Отряд Атмосфера")(size="3", icon="bug", bg="", flexAlign="start")
+        +projects-list__item("Звук/Свет")(size="4", icon="sun", bg="", flexAlign="start")
 
     .projects-text.col-xs-8
         | Не хватает чего-то? &nbsp;
