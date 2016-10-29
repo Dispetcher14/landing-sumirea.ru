@@ -1,8 +1,8 @@
 include projects-list__item--content
 
 mixin projects-list__item(title, hideIcon)
-    if attributes.firstRow
-        .col-md-4.flex.flex-center
+    if attributes.flexAlign
+        .flex(class!=attributes.flexAlign)
             +projects-list__item--content(title, attributes.icon, attributes.size, hideIcon)(bg=attributes.bg)
     else
         .col-md-2
