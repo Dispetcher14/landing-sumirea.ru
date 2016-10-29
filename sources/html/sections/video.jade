@@ -4,11 +4,31 @@ section.video.row.flex-center__x
         video.video-object__media(autoplay='autoplay', loop='loop', preload='auto')
             source(src='video/test-back.mp4')
 
+    .video-nav.video-nav__desktop.col-xs-12.col-lg-10.row.hidden-xs.flex-top
+        .col-xs-12.row.flex-center__y.between-xs
+            .video-nav__logo.col-md-2.hidden-sm МИРЭА
+            .video-nav__menu--wrap.col-xs-12.col-md-10
+                ul.video-nav__menu.flex.between-xs
+                    li
+                        a(href="#about") Об организации
+                    li
+                        a(href="#activity") Наша деятельность
+                    li
+                        a(href="#teams") Подразделения
+                    li
+                        a(href="#projects") Наши проекты
+                    li
+                        a(href="#movements") Отряды
+
+    .video-nav.video-nav__mobile.col-xs-12.row.visible-xs
+        //--mobile menu here
+
+    .video-action.col-xs-12.row.flex-center__x
+        .btn.btn-colors__white.col-lg-2.col-md-2.col-sm-4.col-xs-4.flex.flex-center Смотреть
+
 //
     section#trailer.is_overlay
-        video#video(width='100%', height='auto', autoplay='autoplay', loop='loop', preload='auto')
-            source(src='video/test-back.mp4')
-        .overlay
+
         nav.navbar.navbar-default
             .container
                 .row
@@ -55,20 +75,3 @@ section.video.row.flex-center__x
                         a Наши проекты
                     li
                         a Об организации
-        br
-        br
-        br
-        .row.button
-            .col-lg-5.col-md-5.col-sm-4.col-xs-4   
-            .col-lg-2.col-md-2.col-sm-4.col-xs-4.button-see Смотреть
-            .col-lg-5.col-md-5.col-sm-4.col-xs-4
-        .row.switch
-            .col-lg-4
-            .col-lg-4.switch-type
-                i.switchX.switch-first
-                i.switchX.switch-two
-                i.switchX.switch-three
-                i.switchX.switch-four
-                i.switchX.switch-five
-                i.switchX.switch-last
-            .col-lg-4
