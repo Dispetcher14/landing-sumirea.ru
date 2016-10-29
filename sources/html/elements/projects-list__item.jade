@@ -1,0 +1,5 @@
+mixin projects-list__item(title, hideIcon)
+    .col-xs-6.col-sm-4.activity-list__item.flex.flex-center.flex-column
+        if !hideIcon
+            .activity-list__item--icon(class!="icon-" + attributes.icon + " projects-list__item--size" + attributes.size, style="background: url(" + attributes.bg + ") center no-repeat #ffffff")
+        .activity-list__item--title= title
