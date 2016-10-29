@@ -37,13 +37,21 @@ var npm_src = [
     //flexboxgrid
     {
         src: 'node_modules/flexboxgrid/dist/flexboxgrid.min.*',
-        dest: 'css'
+        dest: 'css',
+        minify: {
+            css: true,
+            prefix: true
+        }
     },
 
     //flexboxgrid
     {
         src: 'node_modules/flexboxgrid-helpers/dist/flexboxgrid-helpers.min.*',
-        dest: 'css'
+        dest: 'css',
+        minify: {
+            css: true,
+            prefix: true
+        }
     },
 
     //normalize
