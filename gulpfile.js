@@ -128,7 +128,7 @@ var dest_html = DEST + '';
 /* Other */
 var YOUR_LOCALS = {}; //for jade
 
-var browsers_ver = ['not ie <= 9', 'iOS > 7'];
+var browsers_ver = ['not ie <= 9', 'iOS > 6'];
 
 
 /* Tasks */
