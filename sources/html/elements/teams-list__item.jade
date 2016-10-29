@@ -1,4 +1,5 @@
 mixin teams-list__item(title)
+    - var bgImg = "img/teams/" + attributes.bg
     .col-xs-4.col-sm-3.teams-list__item.flex.flex-center.flex-column
-        .teams-list__item--icon(class!="icon-" + attributes.icon, style="background: url(" + attributes.bg + ") center no-repeat #000000")
+        .teams-list__item--icon(class!="icon-" + attributes.icon, style="background: url(" + bgImg + ") center no-repeat #000000")
         .teams-list__item--title= title
