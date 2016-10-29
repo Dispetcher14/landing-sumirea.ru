@@ -180,9 +180,19 @@ gulp.task('buildDeps', function () {
         if (dep.minify) {
             //if we need to minify css
             if (dep.minify.css) {
-                gulp.src(dep.src)
-                    .pipe(cssmin())
-                    .pipe(gulp.dest(DEST + dep.dest))
+                if (dep.minify.prefix) {
+                    gulp.src(dep.src)
+                        .pipe(autoprefixer({
+                            browsers: browsers_ver,
+                            cascade: false
+                        }))
+                        .pipe(cssmin())
+                        .pipe(gulp.dest(DEST + dep.dest))
+                } else {
+                    gulp.src(dep.src)
+                        .pipe(cssmin())
+                        .pipe(gulp.dest(DEST + dep.dest))
+                }
             }
 
             //if we need to minify js
