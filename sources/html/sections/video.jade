@@ -1,3 +1,5 @@
+include ../elements/button
+
 section#video.video.row.flex-center__x
     .video-overlay
     .video-object
@@ -24,7 +26,7 @@ section#video.video.row.flex-center__x
         //--mobile menu here
 
     .video-action.col-xs-12.row.flex-center__x
-        .btn.btn-colors__white.col-lg-2.col-md-2.col-sm-4.col-xs-4.flex.flex-center Смотреть
+        +button("Смотреть")(class="btn-colors__white")
 
 //
     section#trailer.is_overlay
