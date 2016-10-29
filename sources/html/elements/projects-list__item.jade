@@ -1,5 +1,9 @@
+include projects-list__item--content
+
 mixin projects-list__item(title, hideIcon)
-    .col-xs-6.col-sm-4.activity-list__item.flex.flex-center.flex-column
-        if !hideIcon
-            .activity-list__item--icon(class!="icon-" + attributes.icon + " projects-list__item--size" + attributes.size, style="background: url(" + attributes.bg + ") center no-repeat #ffffff")
-        .activity-list__item--title= title
+    if attributes.firstRow
+        .col-md-4.flex.flex-center
+            +projects-list__item--content(title, attributes.icon, attributes.size, hideIcon)(bg=attributes.bg)
+    else
+        .col-md-2
+            +projects-list__item--content(title, attributes.icon, attributes.size, hideIcon)(bg=attributes.bg)
