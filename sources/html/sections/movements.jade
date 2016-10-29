@@ -1,3 +1,11 @@
-section#movements.movements.row.flex-center__x.text-color__white
+include ../elements/movements-item
+
+section#movements.movements.row.text-color__white.flex-column
     //--@TODO: add it later
     .section-header.col-xs-12 Отряды
+
+    .col-xs-12.row.flex-center__x
+        +movements-item("Росспас", "Настоящие мужчины. МЧС. Другой текст, подробнее.")(bg="img/movements/rosspas.jpg")
+        +movements-item("Педагогический отряд Априори", "Настоящие мужчины. МЧС. Другой текст, подробнее.")(bg="img/movements/apriori.jpg")
+        +movements-item("Педагогический отряд Атмосфера", "Настоящие мужчины. МЧС. Другой текст, подробнее.")(bg="img/movements/atmosphere.jpg")
+        +movements-item("Строительный отряд", "Настоящие мужчины. МЧС. Другой текст, подробнее.")(bg="")
