@@ -24,3 +24,13 @@ function scrollToId(target) {
         window.location.hash = target;
     });
 }
+
+//disable video at breakpoint
+$(function() {
+
+// onload
+if(document.body.clientWidth >= 870) {
+    $('.video-overlay').attr('display', none);
+}
+
+});
