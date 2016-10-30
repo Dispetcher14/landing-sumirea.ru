@@ -1,10 +1,10 @@
 mixin movements-item(title, text)
-	- var bgImg = "img/movements/" + attributes.bg
-	.col-xs-8.movements-item.flex.flex-center.flex-column(style="background: url(" + bgImg + ") center no-repeat #000000")
-		.dark.dark-no__radius
-		.dark-content
-			.movements-item__line
-				hr.left.hidden-sm
-				hr.right.hidden-sm
-				.movements-item__title= title
-			.movements-item__text= text
+    - var bgImg = "img/movements/" + attributes.bg
+    .col-xs-8.movements-item.flex.flex-center.flex-column(style="background: url(" + bgImg + ") center no-repeat #000000")
+        .dark.dark-no__radius
+        .dark-content
+            .movements-item__line.flex.flex-center
+                hr.hidden-sm
+                .movements-item__title= title
+                hr.hidden-sm
+            .movements-item__text= text
