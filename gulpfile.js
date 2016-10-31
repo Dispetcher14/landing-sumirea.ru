@@ -37,13 +37,21 @@ var npm_src = [
     //flexboxgrid
     {
         src: 'node_modules/flexboxgrid/dist/flexboxgrid.min.*',
-        dest: 'css'
+        dest: 'css',
+        minify: {
+            css: true,
+            prefix: true
+        }
     },
 
     //flexboxgrid
     {
         src: 'node_modules/flexboxgrid-helpers/dist/flexboxgrid-helpers.min.*',
-        dest: 'css'
+        dest: 'css',
+        minify: {
+            css: true,
+            prefix: true
+        }
     },
 
     //normalize
@@ -128,19 +136,12 @@ var dest_html = DEST + '';
 /* Other */
 var YOUR_LOCALS = {}; //for jade
 
-var browsers_ver = ['not ie <= 9', 'iOS > 7'];
+var browsers_ver = ['not ie <= 9', 'iOS > 6'];
 
 
 /* Tasks */
 gulp.task('default', ['build', 'watch']);
-gulp.task('jenkins-tests', function() {
-  connect.server({
-    port: 8888
-  });
-  // run some headless tests with phantomjs 
-  // when process exits: 
-  connect.serverClose();
-});
+
 gulp.task('build', [
     'buildJs',
     'buildCss',
@@ -187,9 +188,19 @@ gulp.task('buildDeps', function () {
         if (dep.minify) {
             //if we need to minify css
             if (dep.minify.css) {
-                gulp.src(dep.src)
-                    .pipe(cssmin())
-                    .pipe(gulp.dest(DEST + dep.dest))
+                if (dep.minify.prefix) {
+                    gulp.src(dep.src)
+                        .pipe(autoprefixer({
+                            browsers: browsers_ver,
+                            cascade: false
+                        }))
+                        .pipe(cssmin())
+                        .pipe(gulp.dest(DEST + dep.dest))
+                } else {
+                    gulp.src(dep.src)
+                        .pipe(cssmin())
+                        .pipe(gulp.dest(DEST + dep.dest))
+                }
             }
 
             //if we need to minify js
