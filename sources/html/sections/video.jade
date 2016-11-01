@@ -1,5 +1,7 @@
 include ../elements/button
 
+.nav-mobile.row.visible-xs
+
 section#video.video.row.flex-center__x
     .video-overlay
     .video-object
@@ -21,9 +23,6 @@ section#video.video.row.flex-center__x
                         a(href="#projects").scroll Наши проекты
                     li
                         a(href="#movements").scroll Отряды
-
-    .video-nav.video-nav__mobile.col-xs-12.row.visible-xs
-        //--mobile menu here
 
     .video-action.col-xs-12.row.flex-center__x
         +button("Смотреть")(class="btn-colors__white")
