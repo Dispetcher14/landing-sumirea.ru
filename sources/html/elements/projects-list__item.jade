@@ -3,8 +3,8 @@ include projects-list__item--content
 mixin projects-list__item(title, url, hideIcon)
     - var bgImg = "img/projects/" + attributes.bg
     if attributes.flexClass
-        a(href!=url, target="_blank", class!=attributes.flexClass).flex.flex-center__y
+        a(href!=url, target="_blank", class!=attributes.flexClass).flex.flex-center
             +projects-list__item--content(title, attributes.icon, attributes.size, hideIcon)(bg=bgImg)
     else
-        a(href!=url, target="_blank", class!="flex-x__" + attributes.flexAlign).flex.flex-y__end.col-md-2
+        a(href!=url, target="_blank", class!="flex-x__" + attributes.flexAlign + "-lg").flex.flex-center.flex-y__end.col-xs-6.col-md-4.col-lg-2
             +projects-list__item--content(title, attributes.icon, attributes.size, hideIcon)(bg=bgImg)
