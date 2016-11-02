@@ -1,6 +1,6 @@
-mixin movements-item(title, text)
+mixin movements-item(title, text, url)
     - var bgImg = "img/movements/" + attributes.bg
-    .col-xs-8.movements-item.flex.flex-center.flex-column(style="background: url(" + bgImg + ") center no-repeat #000000")
+    a(href!=url, target="_blank", style="background: url(" + bgImg + ") center no-repeat #000000").col-xs-8.movements-item.flex.flex-center.flex-column
         .dark.dark-no__radius
         .dark-content.text-center
             fieldset.movements-item__line.row.flex-center
