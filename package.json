@@ -4,7 +4,8 @@
   "description": "Just\r r",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "npm run gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
