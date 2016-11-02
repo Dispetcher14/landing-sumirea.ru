@@ -22,9 +22,9 @@ var src_js = src_path + 'js/**/*.js',
     src_css = src_path + 'css/**/*.css',
     src_stylus = src_path + 'css/**/*.styl',
     src_img = src_path + 'img/**/*',
-    src_video = 'sources/video/**/*',
+    src_video = src_path + 'video/**/*',
     src_ico = src_path + 'img/favicon/*.ico',
-    src_jade = src_path + 'html/**/*.jade',
+    src_jade = src_path + 'html/index.jade',
     src_fonts = src_path + 'fonts/**/*';
 
 var npm_src = [
