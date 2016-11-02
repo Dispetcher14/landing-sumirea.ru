@@ -1,2 +1,2 @@
-mixin button(text)
-    .btn.col-lg-2.col-md-2.col-sm-4.col-xs-4.flex.flex-center(class!=attributes.class)= text
+mixin button(text, url)
+    a(href!=url, class!=attributes.class).btn.col-lg-2.col-md-2.col-sm-4.col-xs-4.flex.flex-center= text
