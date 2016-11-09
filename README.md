@@ -1,6 +1,6 @@
 # sumirea.ru landing page
 
-## Development
+## Development 
 
 ### You will need
 
@@ -10,7 +10,8 @@ Install this software:
 
 ### Steps to contribute 
 
-* git clone this repo
+* fork this repo
+* run `git clone https://github.com/YOURNICKNAME/REPONAME`
 * run `npm install`
 * run `npm i -g gulp`
 * run `gulp`
