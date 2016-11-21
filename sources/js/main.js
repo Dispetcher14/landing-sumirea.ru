@@ -70,6 +70,9 @@ $(document).ready(function () {
 
         scrollToId(target);
     });
+
+    //init slider
+    $('.slider').bxSlider();
 });
 
 /**
