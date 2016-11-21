@@ -72,7 +72,10 @@ $(document).ready(function () {
     });
 
     //init slider
-    $('.slider').bxSlider();
+    $('.slider').bxSlider({
+        prevText: "", //  
+        nextText: "" //  
+    });
 });
 
 /**
