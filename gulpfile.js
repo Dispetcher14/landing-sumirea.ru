@@ -25,6 +25,7 @@ var src_js = src_path + 'js/**/*.js',
     src_video = src_path + 'video/**/*',
     src_ico = src_path + 'img/favicon/*.ico',
     src_jade = src_path + 'html/index.jade',
+    src_jade_watch = src_path + 'html/**/*',
     src_fonts = src_path + 'fonts/**/*';
 
 var npm_src = [
@@ -164,7 +165,7 @@ gulp.task('watch', function () {
     });
 
     //watch sources
-    gulp.watch(src_jade, ['reloadJade']);
+    gulp.watch(src_jade_watch, ['reloadJade']);
     gulp.watch(src_js, ['reloadJs']);
     gulp.watch(src_css, ['reloadCss']);
     gulp.watch(src_stylus, ['reloadStylus']);
