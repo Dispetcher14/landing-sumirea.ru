@@ -4,17 +4,30 @@ section#projects.projects.row.flex-center__x.text-color__white
     .col-xs-12.section-header.section-header__black Наши проекты
 
     .col-xs-12.row.projects-list.flex-center__x.around-xs
-        //4 sizes
-        +projects-list__item('ВРИ "Лес"', "")(size="2", icon="tree", bg="wood.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__end-lg")
-        +projects-list__item("Мы - команда", "", true)(size="1", icon="", bg="weareteam.jpg", flexClass="col-xs-6 col-md-4 col-lg-3 flex-center")
-        +projects-list__item("Медиашкола", "")(size="2", icon="camera", bg="photo.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__start-lg")
+        ul.slider
+            li
+                //4 sizes
+                +projects-list__item('ВРИ "Лес"', "")(size="2", icon="tree", bg="wood.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__end-lg")
+                +projects-list__item("Мы - команда", "", true)(size="1", icon="", bg="weareteam.jpg", flexClass="col-xs-6 col-md-4 col-lg-3 flex-center")
+                +projects-list__item("Медиашкола", "")(size="2", icon="camera", bg="photo.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__start-lg")
 
-        +projects-list__item("Черлидинг", "")(size="4", icon="thumbs-up", bg="dance.jpg", flexAlign="end")
-        +projects-list__item("Отряд Априори", "")(size="3", icon="users", bg="apriori.jpg", flexAlign="end")
-        +projects-list__item("Киберспорт", "")(size="2", icon="gamepad", bg="games.jpg", flexAlign="end")
-        +projects-list__item("Школа кураторов", "")(size="2", icon="graduation-cap", bg="fakel.jpg", flexAlign="start")
-        +projects-list__item("Отряд Атмосфера", "")(size="3", icon="bug", bg="atmosphere.jpg", flexAlign="start")
-        +projects-list__item("Звук/Свет", "")(size="4", icon="sun", bg="light.jpg", flexAlign="start")
+                +projects-list__item("Черлидинг", "")(size="4", icon="thumbs-up", bg="dance.jpg", flexAlign="end")
+                +projects-list__item("Отряд Априори", "")(size="3", icon="users", bg="apriori.jpg", flexAlign="end")
+                +projects-list__item("Киберспорт", "")(size="2", icon="gamepad", bg="games.jpg", flexAlign="end")
+                +projects-list__item("Школа кураторов", "")(size="2", icon="graduation-cap", bg="fakel.jpg", flexAlign="start")
+                +projects-list__item("Отряд Атмосфера", "")(size="3", icon="bug", bg="atmosphere.jpg", flexAlign="start")
+                +projects-list__item("Звук/Свет", "")(size="4", icon="sun", bg="light.jpg", flexAlign="start")
+            li
+                +projects-list__item('ВРИ "Лес"', "")(size="2", icon="tree", bg="wood.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__end-lg")
+                +projects-list__item("Мы - команда", "", true)(size="1", icon="", bg="weareteam.jpg", flexClass="col-xs-6 col-md-4 col-lg-3 flex-center")
+                +projects-list__item("Медиашкола", "")(size="2", icon="camera", bg="photo.jpg", flexClass="col-xs-6 col-md-4 flex-center flex-x__start-lg")
+
+                +projects-list__item("Черлидинг", "")(size="4", icon="thumbs-up", bg="dance.jpg", flexAlign="end")
+                +projects-list__item("Отряд Априори", "")(size="3", icon="users", bg="apriori.jpg", flexAlign="end")
+                +projects-list__item("Киберспорт", "")(size="2", icon="gamepad", bg="games.jpg", flexAlign="end")
+                +projects-list__item("Школа кураторов", "")(size="2", icon="graduation-cap", bg="fakel.jpg", flexAlign="start")
+                +projects-list__item("Отряд Атмосфера", "")(size="3", icon="bug", bg="atmosphere.jpg", flexAlign="start")
+                +projects-list__item("Звук/Свет", "")(size="4", icon="sun", bg="light.jpg", flexAlign="start")
 
     .projects-text.col-xs-8
         | Ты можешь придумать и организовать&nbsp;
