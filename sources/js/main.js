@@ -10,10 +10,20 @@ $(document).ready(function () {
         anchors.push(el.id);
     });
 
+    //parse anchor on page load
     newAnchor = parseUrlAnchor(anchors);
     if (newAnchor !== false) {
         currentAnchor = newAnchor;
     }
+
+    //add parsing anchor by hash change (e.g. by links)
+    window.addEventListener('hashchange', function (e) {
+        newAnchor = e.newURL.substr(e.newURL.indexOf("#") + 1);
+        newAnchor = anchors.indexOf(newAnchor);
+        if (newAnchor !== -1) {
+            currentAnchor = newAnchor;
+        }
+    });
 
     //block default user scroll by mouse wheel
     document.body.addEventListener("wheel", function (e) {
