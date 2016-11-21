@@ -12,6 +12,7 @@ Install this software:
 
 * fork this repo
 * run `git clone https://github.com/YOURNICKNAME/REPONAME`
+* cd to project directory, e.g. `cd REPONAME`
 * run `npm install`
 * run `npm i -g gulp`
 * run `gulp`
