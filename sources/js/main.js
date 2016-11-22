@@ -10,6 +10,9 @@ $(document).ready(function () {
         anchors.push(el.id);
     });
 
+    //create side nav menu for sections
+    createSideNav(anchors);
+
     //parse anchor on page load
     newAnchor = parseUrlAnchor(anchors);
     if (newAnchor !== false) {
@@ -22,6 +25,10 @@ $(document).ready(function () {
         newAnchor = anchors.indexOf(newAnchor);
         if (newAnchor !== -1) {
             currentAnchor = newAnchor;
+
+            //update side nav item
+            $('.sidenav-item').removeClass('active');
+            $('#sidenav-item__' + anchors[currentAnchor]).addClass('active');
         }
     });
 
@@ -138,10 +145,32 @@ function parseUrlAnchor(anchors) {
     var cid = anchors.indexOf(anchor);
 
     if (cid !== -1) {
+        //scroll to section
         scrollToId('#' + anchors[cid]);
 
+        //update classes in side nav
+        $('#sidenav-item__' + anchor).addClass('active');
+
+        //return new section id
         return cid;
     } else {
         return false;
     }
+}
+
+function createSideNav(anchors) {
+    var el = document.createElement('div');
+    el.className = "sidenav flex flex-column";
+    anchors.forEach(function (id, i) {
+        el.appendChild(createNavLink(id));
+    });
+    document.body.appendChild(el);
+}
+
+function createNavLink(link) {
+    var el = document.createElement('a');
+    el.id = 'sidenav-item__' + link;
+    el.setAttribute('href', '#' + link);
+    el.className = "scroll sidenav-item bx-pager-link";
+    return el;
 }
