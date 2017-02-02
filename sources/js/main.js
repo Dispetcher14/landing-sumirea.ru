@@ -77,6 +77,7 @@ $(document).ready(function () {
         }
     });
 
+
     //add scrolling on click on elements with .scroll class
     $(".scroll").on("click", function (e) {
         //prevent default scrolling
