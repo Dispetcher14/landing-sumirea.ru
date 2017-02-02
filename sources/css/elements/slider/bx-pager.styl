@@ -1,0 +1,28 @@
+$inactive_color = #666
+$active_color = #000
+
+.bx-pager
+  position absolute
+  left 50%
+  transform translateX(-50%)
+  bottom 0
+  z-index 2
+  display flex
+
+.bx-pager-item
+  margin 0 5px
+  pointer-events auto
+
+.bx-pager-link
+  display block
+  width 10px
+  height 10px
+  border 1px solid $inactive_color
+  border-radius 50%
+  color black
+  font-size 1px
+  background $inactive_color
+
+.bx-pager-link.active, .bx-pager-link:hover
+  background $active_color
+  border 1px solid $active_color
