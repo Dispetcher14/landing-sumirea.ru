@@ -1,0 +1,7 @@
+mixin projects-list__item--content(title, icon, size, hideIcon)
+    .projects-list__item.flex.flex-center.flex-column(class!="projects-list__item--size" + size, style="background: url(" + attributes.bg + ") center no-repeat #000000")
+        .dark
+        .dark-content
+            if !hideIcon
+                .projects-list__item--icon(class!="icon-" + icon)
+            .projects-list__item--title= title
